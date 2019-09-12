@@ -53,4 +53,4 @@ Deployment takes awhile, so use this as an opportunity to walk a little bit.
 gcloud app browse
 ```
 
-Should be noted that if you want to cleanup your resources and stop billing, the best way is to delete the project. [Manage GCP resources](https://console.cloud.google.com/iam-admin/projects?_ga=2.128389829.-875666561.1568212966)
+Should be noted that if you want to cleanup your resources and stop billing, the best way is to delete the project. [Manage GCP resources](https://console.cloud.google.com/iam-admin/projects)
