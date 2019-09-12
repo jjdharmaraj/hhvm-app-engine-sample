@@ -1,0 +1,5 @@
+*.env
+node_modules
+*.zip
+/vendor/*
+env_variables.yaml
