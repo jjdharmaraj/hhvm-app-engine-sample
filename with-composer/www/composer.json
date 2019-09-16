@@ -1,0 +1,12 @@
+{
+  "require": {
+    "hhvm/hhvm-autoload": "^2.0",
+    "hhvm/hsl": "^4.15",
+    "usox/hack-uuid-generator": "^1.4.0"
+  },
+  "require-dev": {
+    "hhvm/hhast": "^4.21",
+    "hhvm/hacktest": "^1.6",
+    "facebook/fbexpect": "^2.6"
+  }
+}
