@@ -39,7 +39,3 @@ gcloud app browse
 ```
 
 Should be noted that if you want to cleanup your resources and stop billing, the best way is to delete the project. [Manage GCP resources](https://console.cloud.google.com/iam-admin/projects)
-
-## TODO
-
-1. In order to get composer to work with HHVM, my solution is a little hacky. I am sure there is a more elegant solution.

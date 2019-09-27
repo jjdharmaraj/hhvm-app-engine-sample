@@ -2,7 +2,7 @@
   "require": {
     "hhvm/hhvm-autoload": "^2.0",
     "hhvm/hsl": "^4.15",
-    "usox/hack-uuid-generator": "^1.4.0"
+    "facebook/xhp-lib": "^2.10.2"
   },
   "require-dev": {
     "hhvm/hhast": "^4.21",

@@ -16,31 +16,28 @@
 
 require_once(__DIR__.'/../vendor/hh_autoload.hh');
 
-function third_party_sample(): string{
-  $uuid_generator = new \Usox\HackUuidGen\UuidGenerator();
-  $uuid = $uuid_generator->generate();
-  return $uuid;
+function file_type(): string {
+  return "PHP";
 }
-function main(): noreturn {
-  \Facebook\AutoloadMap\initialize();
 
-  $uuid = third_party_sample();
-  $file_type = "PHP";
+function app_service(): string {
+  return "Google App Engine";
+}
 
-  $html = "<!DOCTYPE html>
-<html>
+function basic_usage_examples_embed_hack(): void {
+  $app = <span>{app_service()}</span>;
+
+  echo(<html>
   <head>
-    <title>$file_type + Composer Sample</title>
+    <title>{file_type()} + Composer Sample</title>
   </head>
   <body>
     <h1>Welcome to HHVM!</h1>
-    <p>I am a $file_type file executed by HHVM</p>
-    <p>Brought to you by Google App Engine.</p>
+    <p>I am a <strong>{file_type()}</strong> file executed by HHVM!!</p>
+    <p>Brought to you by {$app}.</p>
     <p>This sample project shows how to include composer as part of your setup.</p>
-    <p>This UUID: ($uuid) is brought to you by <a href=\"https://github.com/usox/hack-uuid-generator\" target=\"_blank\">https://github.com/usox/hack-uuid-generator</a></p>
   </body>
-</html>";
-  print($html);
-  exit(0);
+</html>
+  );
 }
-main();
+basic_usage_examples_embed_hack();
